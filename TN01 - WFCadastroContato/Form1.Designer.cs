@@ -57,6 +57,7 @@
             mnu_sobre.Name = "mnu_sobre";
             mnu_sobre.Size = new Size(49, 20);
             mnu_sobre.Text = "Sobre";
+            mnu_sobre.Click += mnu_sobre_Click;
             // 
             // mnu_sair
             // 
@@ -72,10 +73,11 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(351, 273);
             Controls.Add(snu_menu);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MainMenuStrip = snu_menu;
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "ASV Cadastro";
             snu_menu.ResumeLayout(false);
             snu_menu.PerformLayout();
             ResumeLayout(false);

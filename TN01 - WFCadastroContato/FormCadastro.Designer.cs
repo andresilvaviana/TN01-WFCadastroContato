@@ -220,10 +220,11 @@
             Controls.Add(lbl_sobrenome);
             Controls.Add(txt_nome);
             Controls.Add(lbl_nome);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "FormCadastro";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "FormCadastro";
+            Text = "Cadastro";
             grp_tipotelefone.ResumeLayout(false);
             grp_tipotelefone.PerformLayout();
             ResumeLayout(false);

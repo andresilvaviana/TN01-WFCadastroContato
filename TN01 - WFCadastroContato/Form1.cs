@@ -22,5 +22,11 @@ namespace TN01___WFCadastroContato
         {
             this.Close();
         }
+
+        private void mnu_sobre_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Sistema de Cadastro de Contatos\nVersão 1.0\nDesenvolvido por: ASV.Cia",
+                "info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

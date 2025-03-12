@@ -107,7 +107,8 @@ namespace TN01___WFCadastroContato
 
             MessageBox.Show( mensagem, "Info",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+            
+            limparformulario();
         }
 
         private void btn_voltar_Click(object sender, EventArgs e)
