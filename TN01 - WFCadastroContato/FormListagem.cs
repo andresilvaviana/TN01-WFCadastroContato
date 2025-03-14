@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace TN01___WFCadastroContato
 {
-    public partial class FormListagem: Form
+    public partial class FormListagem : Form
     {
         public FormListagem()
         {
             InitializeComponent();
+        }
+
+        private void FormListagem_Load(object sender, EventArgs e)
+        {
+            dgv_listacontatos.DataSource = Contato.ListaContatos;
         }
     }
 }

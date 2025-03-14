@@ -33,12 +33,13 @@
             mnu_cadastro = new ToolStripMenuItem();
             mnu_sobre = new ToolStripMenuItem();
             mnu_sair = new ToolStripMenuItem();
+            mnu_listagem = new ToolStripMenuItem();
             snu_menu.SuspendLayout();
             SuspendLayout();
             // 
             // snu_menu
             // 
-            snu_menu.Items.AddRange(new ToolStripItem[] { mnu_cadastro, mnu_sobre, mnu_sair });
+            snu_menu.Items.AddRange(new ToolStripItem[] { mnu_cadastro, mnu_sobre, mnu_listagem, mnu_sair });
             snu_menu.Location = new Point(0, 0);
             snu_menu.Name = "snu_menu";
             snu_menu.Size = new Size(351, 24);
@@ -66,6 +67,13 @@
             mnu_sair.Text = "Sair";
             mnu_sair.Click += mnu_sair_Click;
             // 
+            // mnu_listagem
+            // 
+            mnu_listagem.Name = "mnu_listagem";
+            mnu_listagem.Size = new Size(67, 20);
+            mnu_listagem.Text = "Listagem";
+            mnu_listagem.Click += mnu_listagem_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -91,5 +99,6 @@
         private ToolStripMenuItem mnu_cadastro;
         private ToolStripMenuItem mnu_sobre;
         private ToolStripMenuItem mnu_sair;
+        private ToolStripMenuItem mnu_listagem;
     }
 }

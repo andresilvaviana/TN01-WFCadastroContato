@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormListagem));
-            dataGridView1 = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            dgv_listacontatos = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dgv_listacontatos).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // dgv_listacontatos
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 19);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(599, 197);
-            dataGridView1.TabIndex = 0;
+            dgv_listacontatos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgv_listacontatos.Location = new Point(12, 8);
+            dgv_listacontatos.Name = "dgv_listacontatos";
+            dgv_listacontatos.Size = new Size(599, 212);
+            dgv_listacontatos.TabIndex = 0;
             // 
             // FormListagem
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(623, 228);
-            Controls.Add(dataGridView1);
+            Controls.Add(dgv_listacontatos);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
@@ -54,12 +54,13 @@
             Name = "FormListagem";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Lista de Contatos";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            Load += FormListagem_Load;
+            ((System.ComponentModel.ISupportInitialize)dgv_listacontatos).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private DataGridView dgv_listacontatos;
     }
 }

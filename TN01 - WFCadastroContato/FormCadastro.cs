@@ -112,7 +112,7 @@ namespace TN01___WFCadastroContato
             c1.Codigo = 0;
             c1.TipoTelefone = tipotelefone;
             c1.DDD = msk_dddtelefone.Text.Substring(0, 2);
-            c1.Telefone = msk_dddtelefone.Text.Substring(3);
+            c1.Telefone = msk_dddtelefone.Text.Substring(2);
 
             Contato.ListaContatos.Add(c1);
 
