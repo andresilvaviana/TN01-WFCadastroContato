@@ -220,8 +220,10 @@
             Controls.Add(lbl_sobrenome);
             Controls.Add(txt_nome);
             Controls.Add(lbl_nome);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
+            MinimizeBox = false;
             Name = "FormCadastro";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Cadastro";

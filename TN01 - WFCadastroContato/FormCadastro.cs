@@ -79,19 +79,19 @@ namespace TN01___WFCadastroContato
                 email = txt_email.Text;
             }
 
-            string? tipotelefone;
+            ETipoTelefone tipotelefone;
 
             if (rdb_pessoal.Checked)
             {
-                tipotelefone = "Pessoal";
+                tipotelefone = ETipoTelefone.Pessoal;
             }
             else if (rdb_comercial.Checked)
             {
-                tipotelefone = "Comercial";
+                tipotelefone = ETipoTelefone.Comercial;
             }
             else if (rdb_recado.Checked)
             {
-                tipotelefone = "Recado";
+                tipotelefone = ETipoTelefone.Recado;
             }
             else
             {
@@ -104,6 +104,18 @@ namespace TN01___WFCadastroContato
                 "Telefone: " + telefone + "\n" +
                 "Tipo de Telefone: " + tipotelefone + "\n" +
                 "Email: " + email + "\n";
+
+            Contato c1 = new Contato();
+            c1.Nome = nome;
+            c1.Sobrenome = sobrenome;
+            c1.Email = email;
+            c1.Codigo = 0;
+            c1.TipoTelefone = tipotelefone;
+            c1.DDD = msk_dddtelefone.Text.Substring(0, 2);
+            c1.Telefone = msk_dddtelefone.Text.Substring(3);
+
+            Contato.ListaContatos.Add(c1);
+
 
             MessageBox.Show( mensagem, "Info",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
