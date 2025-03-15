@@ -34,6 +34,7 @@ namespace TN01___WFCadastroContato
         }
 
         public Contato() { }
+
         public static List<Contato> ListaContatos = new List<Contato>();
 
         public int Codigo { get; set; }

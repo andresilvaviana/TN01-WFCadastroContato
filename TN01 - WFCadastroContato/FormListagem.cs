@@ -21,5 +21,10 @@ namespace TN01___WFCadastroContato
         {
             dgv_listacontatos.DataSource = Contato.ListaContatos;
         }
+
+        private void dgv_listacontatos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

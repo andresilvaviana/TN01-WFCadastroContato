@@ -40,6 +40,7 @@
             dgv_listacontatos.Name = "dgv_listacontatos";
             dgv_listacontatos.Size = new Size(599, 212);
             dgv_listacontatos.TabIndex = 0;
+            dgv_listacontatos.CellContentClick += dgv_listacontatos_CellContentClick;
             // 
             // FormListagem
             // 
